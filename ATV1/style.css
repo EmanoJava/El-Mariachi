@@ -1,0 +1,33 @@
+
+
+.justificado{
+    text-align: justify;
+
+}
+
+.title{
+    font-family: serif;
+    text-align: center;
+    text-shadow: -2.4px 2px 2px rgb(235, 18, 18);
+    
+}
+
+.id{
+    font-family: serif;
+}
+
+.titlle{
+    font-family: serif;
+    color: darkred;
+    font-size: 19px;
+    text-align: center;
+
+}
+
+.Pitágoras{
+    background-color: cyan;
+    font-size: 35px;
+    text-align: center;
+    border: 2px solid;
+    margin-top: 0;
+}
