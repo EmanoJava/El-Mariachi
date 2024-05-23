@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto de Suspense</title>
+</head>
+<body>
+    <div id="texto-suspense">Este é um texto de suspense.</div>
+
+    <script>
+        let texto = document.getElementById('texto-suspense').innerText;
+        let index = texto.length;
+
+        function apagarTexto() {
+            if (index > 0) {
+    
+                const textoParcial = texto.substring(0, index);                
+                document.getElementById('texto-suspense').innerText = textoParcial;
+                index--;
+                setTimeout(apagarTexto, 100); // Ajuste aqui a velocidade de apagar o texto
+            }
+        }
+
+        // Iniciar o efeito de apagar o texto após um tempo de espera (por exemplo, 2 segundos)
+        setTimeout(apagarTexto, 2000);
+    </script>
+</body>
+</html>
