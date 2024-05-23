@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color:var(--cor-fundo);
+        }
+
+        :root{
+            --cor-fundo:black;
+            --fonte-principal: 30px "Jacquard 12";
+            --altura-cabecalho: 50px
+           
+        }
+
+        .card{
+            border: 1px rgb(250, 248, 248) solid;
+            padding: 10px;
+            margin: 10px;
+            background-color:var(--cor-fundo);
+            font: var(--fonte-principal);
+            height: calc(100vh - var(--altura-cabecalho));
+        }
+
+        .card h1{
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .card ul{
+            margin-left: 15px;
+            color: white;
+        }
+
+        .card ul li{
+            list-style: none;
+            font-family: "Jacquard 12", system-ui;
+            font-size: 40px;
+        }
+
+        .card ul li: :hover{
+        
+        }
+
+        .cabecalho{
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: var(--altura-cabecalho);
+            overflow-y: scroll;
+        }
+
+    </style>
+<body>
+    <div class="cabecalho">
+        <p>cabecalho</p>
+        <p>cabecalho</p>
+        <p>cabecalho</p>
+        <p>cabecalho</p>
+        <p>cabecalho</p>
+        <p>cabecalho</p>
+        <p>cabecalho</p>
+        <p>cabecalho</p>
+        <p>cabecalho</p>
+        <p>cabecalho</p>
+        <p>cabecalho</p>
+        <p>cabecalho</p>
+    </div>
+    <div class="card">
+        <h1>
+        Lista de Tarefas
+        </h1>
+    <ul>
+        <li>Tarefa 1</li>
+        <li>Tarefa 3</li>
+        <li>Tarefa 2</li>
+    </ul>
+
+    </div>
+</body>
+</html>
