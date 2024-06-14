@@ -1,0 +1,9 @@
+div#menu{
+    background-color: blueviolet;
+    height: 50px ;
+    
+}
+
+ul.secao1{
+    display: inline-block ;
+}
