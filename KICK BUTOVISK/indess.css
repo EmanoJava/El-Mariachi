@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: gray;
+    width: 39.88rem;
+    height: 31.25rem;
+
+    justify-content: flex-start;
+
+    display: flex;
+
+    align-items:center;
+
+    flex-direction: column-reverse;
+}
+
+.box {
+    width: 6.25rem;
+    height: 6.50rem;
+    border: 0.1vw solid black;
+    color: bisque;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg_azul{
+    background-color: blue;
+}
+
+.bg_vermelho{
+    background-color: red;
+}
+
+.bg_verde{
+    background-color: green;
+}
