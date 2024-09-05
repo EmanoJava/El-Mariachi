@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>sistema de Multas</title>
+
+    <script  src="sistema de multas.js" defer></script>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 100px;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    .tabela{
+        background-color: rgb(109, 119, 116);
+        height: 40vh;
+        width: 40vw;
+        border: black 2px solid;
+        display: flex;
+        align-items: center;
+    }
+    #inp{
+        height: 4.5vh;
+        width: 14vw;
+        gap: 10px;
+    }
+
+    #inp1{
+        height: 4.5vh;
+        width: 14vw;
+        gap: 10px;
+    }
+
+    .alinhamento{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        
+    }
+    #button{
+        border: black solid;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        height: 4.5vh;
+        width: 10vw;
+    }
+    p{
+        margin-left: 20px ;
+    }
+</style>
+
+<body>
+    <h1>Sistema de Multas</h1>
+    <div class="container">
+    
+        <div class="tabela">
+
+            <div class="alinhamento">
+            <label for="Maximo de Velocidade">Velocidade máxima da via:</label>
+            <input id="inp" type="text">
+            <label for="Maximo de Velocidade">Velocidade do Veículo:</label>
+            <input id="inp1" type="text">
+
+            <button id="button">Calcular</button>
+        </div>
+
+        </div>
+        <div class="tabela">
+            <p>Multa por excesso de velocidade:
+            <br>
+            <br>
+            R$ 130,16 - Até 20% acima do limite permitido
+            <br>
+            <br>
+            R$ 195,23 - De 20% até 50% acima do limite permitido
+            <br>
+            <br>
+            R$ 880,41 - Acima de 50% do limite permitido
+            </p>
+        </div>
+    </div>
+    <div id="Saida"></div>
+</body>
+</html>
