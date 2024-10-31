@@ -41,3 +41,40 @@ function isPalindrome(str){
 }
 
 console.log(isPalindrome("arara"))
+
+function countOccurrences(str,letra){
+
+    let quant = str.length
+    let numvar = 0
+    let letr = 0
+
+    while( numvar <= quant){
+        if( str[numvar] == letra){
+            letr++
+        }
+        numvar++
+    }
+    
+    return letr
+}
+
+
+console.log(countOccurrences("banana", "a"))
+
+function getInitials(str) {
+    let quant = str.length;
+    let numvar = 0;
+    let iniciais = "";
+
+    while (numvar < quant) { 
+        if (str[numvar] === str[numvar].toUpperCase() ) {
+            iniciais += str[numvar]; 
+        }
+        numvar++;
+    }
+    
+    return iniciais; 
+}
+
+console.log(getInitials("João Silva")); 
+
